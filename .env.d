@@ -24,9 +24,6 @@ DOCKER_HOST_MAIL_PORT=63984
 DOCKER_HOST_APP_PORT=63985
 DOCKER_ENV_FILE=.env.d
 
-UUID=$(id -u)
-GID=$(id -g)
-
 # -----------------------------------------------------------------------------
 # START TLS CERTIFICATES
 # -----------------------------------------------------------------------------
@@ -69,3 +66,10 @@ AUTH_SALT='generateme'
 SECURE_AUTH_SALT='generateme'
 LOGGED_IN_SALT='generateme'
 NONCE_SALT='generateme'
+
+# -----------------------------------------------------------------------------
+# CLOUDFLARE
+# -----------------------------------------------------------------------------
+CLOUDFLARE_TUNNEL_NAME=wp-use
+CLOUDFLARE_TUNNEL_DOMAIN=callmiy.com
+CLOUDFLARE_TUNNEL_CONFIG_FILE=.cloudflare-tunnel-config-wp-use.yml
